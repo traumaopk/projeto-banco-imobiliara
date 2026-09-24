@@ -30,5 +30,15 @@ creci VARCHAR (20)  NOT NULL UNIQUE,
 telefone VARCHAR (20) NOT NULL,
 email VARCHAR (200) NOT NULL UNIQUE,
 data_admissao DATE NOT NULL,
-ativo BOOLEAN DEAFAULT TRUR
+ativo BOOLEAN DEAFAULT TRUE,
+FOREIGN KEY (cpf) REFERENCES pessoa (cpf) 
 ):
+
+CEATE TABLE venda(
+id_venda SERIAL PRIMARY KEY,
+cpf_cliente VACHAR (11) NOT NULL,
+id_corretor INT NOT NULL,
+id_imovel INT NOT NULL, 
+dt_venda
+vl_final
+
