@@ -39,6 +39,11 @@ id_venda SERIAL PRIMARY KEY,
 cpf_cliente VACHAR (11) NOT NULL,
 id_corretor INT NOT NULL,
 id_imovel INT NOT NULL, 
-dt_venda
-vl_final
+dt_venda DATE NOT NULL
+vl_final NUMERIC (12,2) NOT NULL,
+
+FOREIGN KEY (cpf_cliente) REFERENCES pessoa (cpf),
+FOREIGN KEY (id_imovel) REFERENCES  imovel (id_imovel),
+FOREING KEY (id_corretor) REFERENCES corretor (id_corretor)
+);
 
