@@ -12,7 +12,7 @@ dt_cadastro TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 
 CREATE TABLE imovel(
 id_imovel SERIAL PRIMARY KEY,
-tipo VARCHA (50) NOT NULL,
+tipo VARCHAR (50) NOT NULL,
 endereco VARCHAR (200) NOT NULL,
 cidade VARCHAR (100) NOT NULL,
 uf CHAR(2) NOT NULL,
@@ -23,22 +23,26 @@ valor NUMERIC(12,2) NOT NULL,
 status VARCHAR(30) NOT NULL
 );
 
-CRETE TABLE corretor(
+CREATE TABLE corretor(
 id_corretor INT PRIMARY KEY,
 cpf VARCHAR (11) NOT NULL UNIQUE,
 creci VARCHAR (20)  NOT NULL UNIQUE,
 telefone VARCHAR (20) NOT NULL,
 email VARCHAR (200) NOT NULL UNIQUE,
 data_admissao DATE NOT NULL,
-ativo BOOLEAN DEAFAULT TRUE,
+ativo BOOLEAN DEFAULT TRUE,
 FOREIGN KEY (cpf) REFERENCES pessoa (cpf) 
-):
+);
 
-CEATE TABLE venda(
+CREATE TABLE venda(
 id_venda SERIAL PRIMARY KEY,
-cpf_cliente VACHAR (11) NOT NULL,
+cpf_cliente VARCHAR (11) NOT NULL,
 id_corretor INT NOT NULL,
 id_imovel INT NOT NULL, 
 dt_venda DATE NOT NULL,
-vl_final NUMERIC (12,2)
+vl_final NUMERIC (12,2) NOT NULL,
 
+FOREIGN KEY (cpf_cliente) REFERENCES pessoa (cpf),
+FOREIGN KEY (id_imovel) REFERENCES  imovel (id_imovel),
+FOREIGN KEY (id_corretor) REFERENCES corretor (id_corretor)
+);
