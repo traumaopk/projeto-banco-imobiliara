@@ -1,1 +1,14 @@
+==============
+-- ALTERÇAO NA TABELA CORRETOR
+-- ==============================
+
+ALTER TABLE corretor 
+DROP COLUMN email,
+DROP COLUMN telefone,
+
+-- A tabela pessoa armazena os dados gerais das pessoas cadastradas.
+-- Como um corretor também é uma pessoa, não é necessário repetir
+-- telefone e email na tabela corretor.
+-- Isso evita duplicidade e possíveis inconsistências nos dados.
+================================================================
 
