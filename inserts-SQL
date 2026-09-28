@@ -1,1 +1,14 @@
+INSERT INTO pessoa (cpf,nome,dt_nascimento,telefone,email,endereco,cidade,uf)
+VALUES (12345678900,'Lucas Holanda','09/03/2006',88-9999999999999999,'e.lucas.holanda@gmail.com','rua padre xavier - 197','Crato','CE');
 
+INSERT INTO pessoa (cpf,nome,dt_nascimento,telefone,email,endereco,cidade,uf)
+VALUES (88845678900,'Leticia Barreto','13/11/2005',88-88888888888888888,'leticia.barreto@gmail.com','rua dh - 40','Crato','CE');
+
+INSERT INTO pessoa (cpf,nome,dt_nascimento,telefone,email,endereco,cidade,uf)
+VALUES (77745678900,'Rubens Holanda','10/08/1998',21-77777777777777777,'holanda@gmail.com','morumbi - 10','Sao paulo','SP');
+
+INSERT INTO pessoa (cpf,nome,dt_nascimento,telefone,email,endereco,cidade,uf)
+VALUES (55545678900,'Lucilene Holanda','18/06/1978',88-66666666666666666,'lucilene.holanda@gmail.com','boqueirao - 90','farias brito','CE');
+
+INSERT INTO pessoa (cpf,nome,dt_nascimento,telefone,email,endereco,cidade,uf)
+VALUES (99945678900,'Rosane Morais','05/07/1988', 9999999999999999999,'rosane.morais@gmail.com','rua padre xavier - 197','Crato','CE');
