@@ -1,14 +1,57 @@
+---------------------------------
+/* -- DADOS DA TABELA PESSOA--*/
+---------------------------------
+
 INSERT INTO pessoa (cpf,nome,dt_nascimento,telefone,email,endereco,cidade,uf)
 VALUES (12345678900,'Lucas Holanda','09/03/2006',88-9999999999999999,'e.lucas.holanda@gmail.com','rua padre xavier - 197','Crato','CE');
 
-INSERT INTO pessoa (cpf,nome,dt_nascimento,telefone,email,endereco,cidade,uf)
-VALUES (88845678900,'Leticia Barreto','13/11/2005',88-88888888888888888,'leticia.barreto@gmail.com','rua dh - 40','Crato','CE');
+(88845678900,'Leticia Barreto','13/11/2005',88-88888888888888888,'leticia.barreto@gmail.com','rua dh - 40','Crato','CE'),
 
-INSERT INTO pessoa (cpf,nome,dt_nascimento,telefone,email,endereco,cidade,uf)
-VALUES (77745678900,'Rubens Holanda','10/08/1998',21-77777777777777777,'holanda@gmail.com','morumbi - 10','Sao paulo','SP');
+(77745678900,'Rubens Holanda','10/08/1998',21-77777777777777777,'holanda@gmail.com','morumbi - 10','Sao paulo','SP'),
 
-INSERT INTO pessoa (cpf,nome,dt_nascimento,telefone,email,endereco,cidade,uf)
-VALUES (55545678900,'Lucilene Holanda','18/06/1978',88-66666666666666666,'lucilene.holanda@gmail.com','boqueirao - 90','farias brito','CE');
+(55545678900,'Lucilene Holanda','18/06/1978',88-66666666666666666,'lucilene.holanda@gmail.com','boqueirao - 90','farias brito','CE'),
 
-INSERT INTO pessoa (cpf,nome,dt_nascimento,telefone,email,endereco,cidade,uf)
-VALUES (99945678900,'Rosane Morais','05/07/1988', 9999999999999999999,'rosane.morais@gmail.com','rua padre xavier - 197','Crato','CE');
+(99945678900,'Rosane Morais','05/07/1988', 9999999999999999999,'rosane.morais@gmail.com','rua padre xavier - 197','Crato','CE'),
+
+(12345678901,'Ana Souza','1992/05/18',21-9911987654321890,'ana.souza@email.com','Rua Pe.cicero, 120','Crato','CE'),
+
+(98765432100,'Carlos Oliveira','1987-11-03',21976543210,'carlos.oliveira@email.com','Avenida Brasil - 850','Rio de Janeiro','RJ');
+
+
+
+---------------------------------
+/* -- DADOS DA TABELA IMOVEL--*/
+---------------------------------
+
+INSERT INTO imovel
+(tipo, endereco, cidade, uf, quartos, banheiros, area_m2, valor, status)
+VALUES
+('Casa', 'Rua das Flores, 100', 'Crato', 'CE', 3, 2, 150.00, 350000.00, 'Disponivel'),
+
+('Apartamento', 'Av. Padre Cicero, 500', 'Juazeiro do Norte', 'CE', 2, 2, 85.50, 280000.00, 'Disponivel'),
+
+('Casa', 'Rua Sao Jose, 250', 'Barbalha', 'CE', 4, 3, 220.00, 480000.00, 'Vendido'),
+
+('Apartamento', 'Rua Central, 80', 'Crato', 'CE', 2, 1, 70.00, 220000.00, 'Disponivel'),
+
+('Terreno', 'Av. Principal, 1000', 'Crato', 'CE', 0, 0, 300.00, 180000.00, 'Disponivel'),
+
+('Casa', 'Rua do Comercio, 450', 'Juazeiro do Norte', 'CE', 3, 2, 180.00, 390000.00, 'Vendido');
+
+
+---------------------------------
+/* -- DADOS DA TABELA CORRETOR--*/
+---------------------------------
+
+INSERT INTO  corretor (cpf,creci,data_admissao)
+VALUES (12345678901,'12345-F','2024/01/15'),
+98765432100,'67890-F','2025/09/07');
+
+
+
+
+
+
+
+
+
